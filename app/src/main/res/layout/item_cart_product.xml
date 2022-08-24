@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/layout_root"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="10dp">
+
+		<ImageView
+			android:id="@+id/image_category"
+			android:layout_width="16dp"
+			android:layout_height="16dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="5dp"
+			android:background="@android:color/white"
+			android:src="@drawable/ic_non_veg"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/cart_shop_name" />
+
+		<TextView
+			android:id="@+id/cart_shop_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:fontFamily="@font/poppins_semibold"
+			android:textColor="@color/titleColor"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.185"
+			tools:text="Restaurant Name" />
+
+		<TextView
+			android:id="@+id/text_food_name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginStart="5dp"
+			android:layout_weight="1"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|start"
+			android:textColor="@color/titleColor"
+			android:textSize="14sp"
+			android:maxWidth="250dp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/image_category"
+			tools:text="Plain Dosa" />
+
+		<include
+			android:id="@+id/layoutQuantityControl"
+			layout="@layout/inc_dec_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginEnd="75dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/cart_shop_name"
+			app:layout_constraintVertical_bias="0.0" />
+
+		<TextView
+			android:id="@+id/cart_quantity"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginEnd="5dp"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|end"
+			android:text="1"
+			android:textColor="@color/titleColor"
+			android:textSize="14dp"
+			android:textStyle="bold"
+			android:visibility="visible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/multiply"
+			app:layout_constraintTop_toTopOf="@+id/layoutQuantityControl"
+			app:layout_constraintVertical_bias="0.0" />
+
+		<TextView
+			android:id="@+id/multiply"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginEnd="5dp"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|end"
+			android:text="*"
+			android:textColor="@color/titleColor"
+			android:textSize="14dp"
+			android:textStyle="bold"
+			android:visibility="visible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/ruppee"
+			app:layout_constraintTop_toTopOf="@+id/layoutQuantityControl"
+			app:layout_constraintVertical_bias="0.0" />
+
+		<TextView
+			android:id="@+id/ruppee"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|end"
+			android:text="₹"
+			android:textColor="@color/titleColor"
+			android:textSize="14dp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/text_food_price"
+			app:layout_constraintTop_toTopOf="@+id/layoutQuantityControl"
+			app:layout_constraintVertical_bias="0.0" />
+
+		<TextView
+			android:id="@+id/text_food_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|end"
+			android:text="50"
+			android:textColor="@color/titleColor"
+			android:textSize="14dp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/layoutQuantityControl"
+			app:layout_constraintVertical_bias="0.0" />
+
+		<TextView
+			android:id="@+id/ruppee1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|end"
+			android:text="₹"
+			android:textColor="@color/colorAccent"
+			android:textSize="14dp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/text_cart_food_price"
+			app:layout_constraintHorizontal_bias="1"
+			app:layout_constraintStart_toEndOf="@+id/layoutQuantityControl"
+			app:layout_constraintTop_toBottomOf="@+id/layoutQuantityControl" />
+
+		<TextView
+			android:id="@+id/text_cart_food_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/open_sans_semibold"
+			android:gravity="center|end"
+			android:text="50"
+			android:textColor="@color/colorAccent"
+			android:textSize="14dp"
+			android:textStyle="bold"
+
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.968"
+			app:layout_constraintStart_toEndOf="@+id/layoutQuantityControl"
+			app:layout_constraintTop_toBottomOf="@+id/layoutQuantityControl"
+			app:layout_constraintVertical_bias="0.166" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

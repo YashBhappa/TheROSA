@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    style="MaterialDrawerTheme.Light.ActionBar.TranslucentStatus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:contentScrim="@color/purple_200"
+                    app:expandedTitleGravity="top"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/purple_200"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center|start"
+                        android:text="@string/label_outlets"
+                        android:textColor="@color/titleColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <SearchView
+                        android:id="@+id/search_restaurants"
+                        android:layout_width="163dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/bg_rounded"
+                        android:backgroundTint="@color/background_color"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:paddingStart="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="6dp"
+                        android:text="@string/label_search_outlets_or_dish"
+                        android:textSize="12sp"
+                        app:drawableEndCompat="@drawable/ic_drawer_search_small" />
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_shops"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="80dp"
+                    tools:listitem="@layout/item_shop" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/layout_states"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+
+                    <include layout="@layout/shimmering_item_shop" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:visibility="gone" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>

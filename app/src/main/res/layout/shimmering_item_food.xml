@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:background="@color/shimmerColor"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="249dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/shimmerColor"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="150dp"
+                android:background="@color/shimmerColor"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="59dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="200dp"
+            android:background="@color/shimmerColor"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@android:color/tab_indicator_text"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="top"
+        android:background="#f2f2f2" />
+</com.google.android.material.card.MaterialCardView>

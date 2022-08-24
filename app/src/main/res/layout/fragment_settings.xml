@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    tools:context=".fragment.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            style="@style/settingsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_dark_mode"
+            android:text="@string/settings_8"
+            android:textColor="@color/miniTitle"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Profile"
+            android:textColor="@color/titleColor" />
+
+        <TextView
+            android:id="@+id/changeProfile"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_2"
+            android:textColor="@color/miniTitle"
+            app:drawableLeftCompat="@drawable/ic_edit_profile" />
+
+        <TextView
+            android:id="@+id/changePassword"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_3"
+            android:textColor="@color/miniTitle"
+            app:drawableLeftCompat="@drawable/ic_edit_password" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Regional"
+            android:textColor="@color/titleColor" />
+
+        <TextView
+            android:id="@+id/language"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_4"
+            android:textColor="@color/miniTitle"
+            app:drawableLeftCompat="@drawable/ic_languages" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Security"
+            android:textColor="@color/titleColor" />
+
+        <Switch
+            android:id="@+id/authentication"
+            style="@style/settingsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_icons8_touch_id"
+            android:text="Authentication"
+            android:textColor="@color/miniTitle"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Other"
+            android:textColor="@color/titleColor" />
+
+        <TextView
+            android:id="@+id/faq"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_5"
+            android:textColor="@color/miniTitle"
+            app:drawableLeftCompat="@drawable/ic_question" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Logo"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="version 0.0.1"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>

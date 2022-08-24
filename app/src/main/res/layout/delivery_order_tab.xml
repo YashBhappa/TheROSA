@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_delivery_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        tools:listitem="@layout/item_order"
+        tools:itemCount="1"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/layout_states"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+
+            <include layout="@layout/shimmering_item_order" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>
+

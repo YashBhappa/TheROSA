@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background_color"
+	tools:context=".activities.PhoneLoginActivity">
+
+	<ImageView
+		android:id="@+id/imageView2"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:scaleType="centerCrop"
+		android:src="@drawable/bg2"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHeight_percent=".27"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0" />
+
+	<ImageView
+		android:id="@+id/imageView3"
+		android:layout_width="60dp"
+		android:layout_marginTop="30dp"
+		android:layout_height="60dp"
+		android:src="@drawable/ic_food"
+		app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias=".3" />
+
+
+	<TextView
+		android:id="@+id/app_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="Welcome to The Rosa"
+		android:textColor="@color/white"
+		android:textSize="16sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/constraintLayout"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginBottom="60dp"
+		android:background="@drawable/view_bg"
+		android:backgroundTint="@color/background_color"
+		android:padding="20dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHeight_percent=".78"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/edittext_mobile_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/poppins_semibold"
+			android:hint="Enter phonenumber"
+			android:textColor="@color/textColor"
+			android:inputType="number"
+			android:maxLength="10"
+			app:layout_constraintStart_toEndOf="@+id/ccp"
+			app:layout_constraintTop_toTopOf="@+id/ccp"
+			tools:text="9176019334" />
+
+		<com.google.android.material.button.MaterialButton
+android:background="@drawable/button_bg"
+			android:id="@+id/button_verify_number"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:fontFamily="@font/poppins_semibold"
+			android:text="Generate OTP"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			app:backgroundTint="@color/colorAccent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/ccp" />
+
+		<com.hbb20.CountryCodePicker
+			android:id="@+id/ccp"
+			android:layout_width="168dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="20dp"
+			android:padding="10dp"
+			app:contentColor="@color/textColor"
+			app:defaultCode="91"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/text_otp_sent2" />
+
+		<TextView
+			android:id="@+id/text_otp_sent2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top"
+			android:padding="20dp"
+			android:layout_marginTop="20dp"
+			android:fontFamily="@font/poppins_bold"
+			android:gravity="center"
+			android:paddingTop="3dp"
+			android:textColor="@color/textColor"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/imageView5"
+			android:text="Enter your country code and phone number for OTP verification" />
+
+		<ImageView
+			android:id="@+id/imageView5"
+			android:layout_width="224dp"
+			android:layout_height="224dp"
+			android:layout_marginTop="25dp"
+			android:padding="16dp"
+			android:src="@drawable/ic_phone_otp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.497"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ProgressBar
+			android:id="@+id/progressBar"
+			style="?android:attr/progressBarStyle"
+			android:layout_width="44dp"
+			android:layout_height="35dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginBottom="10dp"
+			android:visibility="invisible"
+			app:layout_constraintBottom_toBottomOf="@+id/button_verify_number"
+			app:layout_constraintEnd_toEndOf="@+id/button_verify_number"
+			app:layout_constraintTop_toTopOf="@+id/button_verify_number"
+			app:layout_constraintVertical_bias="0.533" />
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

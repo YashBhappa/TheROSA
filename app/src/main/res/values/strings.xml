@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">The ROSA</string>
+    <string name="label_login">LOGIN</string>
+    <string name="hint_enter_phone_number">Enter phone number</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_resend_otp">Resend OTP</string>
+    <string name="label_verify">Verify</string>
+    <string name="label_register">Register</string>
+    <string name="label_update">Update</string>
+    <string name="hint_search_outlets_or_dish">Search Outlets or Dish</string>
+    <string name="label_cart">Cart</string>
+    <string name="label_pickup">Pickup</string>
+    <string name="label_delivery">Delivery</string>
+    <string name="label_to_pay">To Pay</string>
+    <string name="label_enter_delivery_location">Enter Delivery Location</string>
+    <string name="label_no_items_in_cart">No items in cart</string>
+    <string name="label_veg_only">Veg only</string>
+    <string name="label_search_outlets_or_dish">Search Outlets or Dish</string>
+    <string name="label_outlets">Outlets</string>
+    <string name="hint_feedback_optional">Feedback (Optional)</string>
+
+    <string name="settings_2">Edit Profile</string>
+    <string name="settings_3">Change Password</string>
+    <string name="settings_4">Language: English</string>
+    <string name="settings_5">FAQ</string>
+    <string name="settings_6">Contact us</string>
+    <string name="settings_7">Logout</string>
+    <string name="settings_8">Dark Mode</string>
+
+    <string name="loginActivity_1">Reset Password ?</string>
+    <string name="loginActivity_2">Enter Your Email To Received Reset Link.</string>
+    <string name="loginActivity_3">Reset Link Sent To Your Email.</string>
+    <string name="loginActivity_4">Error ! Reset Link is Not Sent</string>
+    <string name="loginActivity_5">Yes</string>
+    <string name="loginActivity_6">No</string>
+    <string name="confirm_order">Confirm Order</string>
+</resources>

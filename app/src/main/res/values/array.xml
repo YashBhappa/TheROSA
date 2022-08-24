@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_activityScreenTitles">
+
+        <item></item>
+        <item>DashBoard</item>
+        <item>My Profile</item>
+        <item>Nearby Restaurant</item>
+        <item>Settings</item>
+        <item>Contact Us</item>
+        <item>About Us</item>
+<item/>
+        <item>Log Out</item>
+
+    </string-array>
+
+
+    <array name="id_activityScreenIcons">
+
+        <item>@drawable/ic_close</item>
+        <item>@drawable/ic_drawer_home</item>
+        <item>@drawable/ic_drawer_user</item>
+        <item>@drawable/ic_location</item>
+        <item>@drawable/ic_drawer_settings</item>
+        <item>@drawable/ic_drawer_mail</item>
+        <item>@drawable/ic_drawer_info</item>
+        <item>0</item>
+        <item>@drawable/ic_drawer_log_out</item> // logout icon
+
+
+
+    </array>
+
+
+</resources>

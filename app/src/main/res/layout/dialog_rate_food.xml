@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/background_color"
+        android:background="@drawable/view_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/view_bg"
+                android:elevation="2dp"
+                android:padding="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Rate your order"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.hsalf.smileyrating.SmileyRating
+                android:id="@+id/smiley_rating"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="start|center"
+                android:hint="@string/hint_feedback_optional"
+                android:paddingBottom="16dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/hintColor"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:background="@drawable/button_bg"
+                android:id="@+id/button_rate"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Rate"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorAccent" />
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
